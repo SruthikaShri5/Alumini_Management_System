@@ -1,0 +1,188 @@
+/* Global CSS Reset & Variables */
+:root {
+  --deep-purple: #281C59;
+  --teal: #4E8D9C;
+  --green: #85C79A;
+  --light: #EDF7BD;
+  --card-bg: rgba(40, 28, 89, 0.15);
+  --border: rgba(78, 141, 156, 0.3);
+}
+
+html { scroll-behavior: smooth; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #EDF7BD;
+  background: #281C59;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #1a1040; }
+::-webkit-scrollbar-thumb { background: rgba(78, 141, 156, 0.5); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(78, 141, 156, 0.8); }
+
+.dashboard-page {
+  background: #1a1040;
+  min-height: 100vh;
+  color: #EDF7BD;
+}
+
+.card {
+  background: rgba(40, 28, 89, 0.4);
+  border: 1px solid rgba(78, 141, 156, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  border-color: rgba(78, 141, 156, 0.6);
+  box-shadow: 0 8px 30px rgba(78, 141, 156, 0.15);
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, rgba(78, 141, 156, 0.2), rgba(133, 199, 154, 0.15));
+  border-color: rgba(78, 141, 156, 0.4);
+  color: #EDF7BD;
+}
+
+.btn {
+  background: linear-gradient(135deg, #4E8D9C, #85C79A);
+  color: #281C59;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(78, 141, 156, 0.4);
+}
+
+.btn-danger {
+  background: rgba(220, 80, 80, 0.2);
+  border: 1px solid rgba(220, 80, 80, 0.4);
+  color: #ff6b6b;
+}
+
+.btn-danger:hover {
+  background: rgba(220, 80, 80, 0.35);
+  box-shadow: 0 6px 20px rgba(220, 80, 80, 0.3);
+}
+
+.w-full { width: 100%; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.flex { display: flex; }
+.flex-1 { flex: 1; }
+.text-center { text-align: center; }
+.text-xl { font-size: 1.25rem; }
+.text-3xl { font-size: 2rem; line-height: 1.2; }
+.text-lg { font-size: 1.1rem; }
+.font-bold { font-weight: 700; }
+
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1a1040 0%, #281C59 100%);
+  border-right: 1px solid rgba(78, 141, 156, 0.3);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  color: #4E8D9C;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  background: rgba(78, 141, 156, 0.15);
+  color: #EDF7BD;
+  border-color: rgba(78, 141, 156, 0.3);
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, rgba(78, 141, 156, 0.25), rgba(133, 199, 154, 0.15));
+  color: #EDF7BD;
+  border-color: rgba(78, 141, 156, 0.4);
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 2rem;
+  min-height: 100vh;
+  color: #EDF7BD;
+}
+
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+
+.text-teal { color: #4E8D9C; }
+.text-green { color: #85C79A; }
+.text-light { color: #EDF7BD; }
+.text-muted { color: rgba(237, 247, 189, 0.5); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-teal {
+  background: rgba(78, 141, 156, 0.2);
+  border: 1px solid rgba(78, 141, 156, 0.4);
+  color: #4E8D9C;
+}
+
+.badge-green {
+  background: rgba(133, 199, 154, 0.15);
+  border: 1px solid rgba(133, 199, 154, 0.4);
+  color: #85C79A;
+}
+
+.badge-light {
+  background: rgba(237, 247, 189, 0.15);
+  border: 1px solid rgba(237, 247, 189, 0.3);
+  color: #EDF7BD;
+}
+
+@media (max-width: 768px) {
+  .sidebar { transform: translateX(-100%); }
+  .sidebar.open { transform: translateX(0); }
+  .main-content { margin-left: 0; padding: 1rem; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,24 @@
+﻿# Node
+frontend-react/node_modules/
+frontend-react/build/
+
+# Python
+python-backend/venv/
+**/__pycache__/
+*.pyc
+
+# Database
+python-backend/app/rootsreconnect.db
+python-backend/chroma_data/
+
+# Environment
+python-backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*

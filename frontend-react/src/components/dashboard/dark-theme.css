@@ -1,0 +1,92 @@
+/* Dashboard Theme Override - RootsReconnect Color Palette */
+.home-dashboard,
+.matches-container,
+.analytics-container,
+.jobs-container,
+.events-container,
+.network-container,
+.profile-container {
+  background: #281C59 !important;
+  min-height: 100vh;
+  color: #EDF7BD;
+}
+
+.welcome-banner {
+  background: linear-gradient(135deg, #4E8D9C, #85C79A) !important;
+  color: #281C59 !important;
+}
+
+.welcome-banner h2,
+.welcome-banner p,
+.welcome-content h2,
+.welcome-content p,
+.streak-badge h4,
+.streak-badge p {
+  color: #281C59 !important;
+}
+
+.stat-card-home,
+.match-card,
+.kpi-card,
+.job-card,
+.event-card,
+.connection-card,
+.profile-section,
+.activity-panel,
+.quick-actions-panel,
+.insights-panel-home,
+.chart-card {
+  background: rgba(40, 28, 89, 0.6) !important;
+  border: 1px solid rgba(78, 141, 156, 0.25) !important;
+  color: #EDF7BD;
+}
+
+.stat-card-home:hover,
+.match-card:hover,
+.job-card:hover,
+.event-card:hover,
+.connection-card:hover {
+  border-color: rgba(78, 141, 156, 0.6) !important;
+  box-shadow: 0 8px 30px rgba(78, 141, 156, 0.2) !important;
+}
+
+h2, h3, h4,
+.stat-details h3,
+.match-info h4,
+.panel-header h3 {
+  color: #EDF7BD !important;
+}
+
+p, .stat-details p, .match-info p, .activity-text {
+  color: rgba(237, 247, 189, 0.7) !important;
+}
+
+.btn-connect, .btn-apply, .btn-register, .btn-save, .btn-edit {
+  background: linear-gradient(135deg, #4E8D9C, #85C79A) !important;
+  color: #281C59 !important;
+}
+
+.activity-item {
+  background: rgba(40, 28, 89, 0.5) !important;
+  border-left-color: #4E8D9C !important;
+}
+
+.insight-card-home, .stat-box, .stat-mini {
+  background: rgba(40, 28, 89, 0.5) !important;
+  border-color: rgba(78, 141, 156, 0.25) !important;
+}
+
+input, textarea, select {
+  background: rgba(40, 28, 89, 0.6) !important;
+  border-color: rgba(78, 141, 156, 0.35) !important;
+  color: #EDF7BD !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #4E8D9C !important;
+  box-shadow: 0 0 0 3px rgba(78, 141, 156, 0.2) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(237, 247, 189, 0.35) !important;
+}
